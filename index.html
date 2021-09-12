@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        #quote::before {
+            content: open-quote;
+        }
+
+        #quote::after {
+            content: close-quote;
+        }
+
+        #quote2::before {
+            content: open-quote;
+        }
+
+        #quote2::after {
+            content: close-quote;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center w-9/12 m-auto p-16 mt-16 bg-gray-300">
+        <h1 class="text-5xl text-indigo-500 mb-6">Rifat's Quote</h1>
+        <button onclick="getQuote2()"
+            class="border-black border-4 rounded-lg p-1 hover:bg-gray-900 hover:border-gray-900 hover:text-white">Get
+            quote</button>
+        <blockquote id="quote2" class="mt-4 text-indigo-700 text-2xl">
+            Hare quotes Will Show After You click on The Quote button
+        </blockquote>
+    </div>
+    <div class="text-center w-9/12 m-auto p-16 mt-16 bg-gray-300">
+        <h1 class="text-5xl text-indigo-500 mb-6">Saown's Quote</h1>
+        <button onclick="getQuote()"
+            class="border-black border-4 rounded-lg p-1 hover:bg-gray-900 hover:border-gray-900 hover:text-white">Get
+            quote</button>
+        <blockquote id="quote" class="mt-4 text-indigo-700 text-2xl">
+            Hare quotes Will Show After You click on The Quote button
+        </blockquote>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
